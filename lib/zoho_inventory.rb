@@ -12,6 +12,9 @@ require "zoho_inventory/client"
 require "zoho_inventory/resource"
 require "zoho_inventory/item"
 
+# Support
+require 'zoho_inventory/util'
+
 module ZohoInventory
   @api_base = "https://inventory.zoho.com/api/v1/"
 
