@@ -7,9 +7,10 @@ require 'json'
 
 # API client
 require "zoho_inventory/client"
+require "zoho_inventory/request"
 
 # API resources
-require "zoho_inventory/resource"
+require "zoho_inventory/zoho_object"
 require "zoho_inventory/item"
 
 # Support

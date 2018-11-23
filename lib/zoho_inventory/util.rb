@@ -6,13 +6,10 @@ module ZohoInventory
       }
     end
 
-    def construct_from(data)
-      case data
-      when Array
-       # Array handling
-      when Hash
-        object_classes(data[:object]).construct_from(data)
-      end
+    def self.remote_object_key
+      @remote_object_keys ||= {
+        Item::OBJECT_NAME => 'item'
+      }
     end
   end
 end
