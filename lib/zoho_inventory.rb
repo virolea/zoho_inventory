@@ -1,21 +1,26 @@
-# Version
+## Version
 require "zoho_inventory/version"
 
-# Dependencies
+## Dependencies
 require 'faraday'
 require 'json'
 
-# API client
+## API client
 require "zoho_inventory/client"
 require "zoho_inventory/request"
 
-# API resources
+## API resources
+# Abstract class
 require "zoho_inventory/zoho_object"
-require "zoho_inventory/item"
-require "zoho_inventory/contact"
-require "zoho_inventory/organization"
 
-# Support
+# Models
+require "zoho_inventory/contact"
+require "zoho_inventory/item"
+require "zoho_inventory/organization"
+require "zoho_inventory/user"
+
+
+## Support
 require 'zoho_inventory/util'
 
 module ZohoInventory

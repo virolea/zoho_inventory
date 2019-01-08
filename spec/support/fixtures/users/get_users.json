@@ -1,0 +1,17 @@
+{
+  "code": 0,
+  "message": "success",
+  "users": [
+    {
+      "user_id": "982000000554041",
+      "role_id": "982000000006005",
+      "name": "David Sujin",
+      "email": "johndavid@zilliuminc.com",
+      "user_role": "admin",
+      "user_type": "zoho",
+      "status": "active",
+      "is_current_user": true,
+      "photo_url": "https://contacts.zoho.com/file?ID=d27344a22bad8bb83a03722b4aa5bc6967c3135f24307fe40db8572782432fd6aae0110f8bb9c4c79e8e0f0cca5904aecfacbf079f13b48c295bacc89ae91fca&fs=thumb"
+    }
+  ]
+}

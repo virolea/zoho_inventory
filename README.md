@@ -31,6 +31,19 @@ ZohoInventory.auth_token = "REPLACE_WITH_YOUR_AUTH_TOKEN"
 ZohoInventory.organization_id = "REPLACE_WITH_YOUR_ORGANIZATION_ID"
 ```
 
+### Errors
+
+Every API call that result in an error from zoho will result in a `ZohoError` exception thrown.
+
+```ruby
+begin
+  # Zoho API Call
+  ZohoInventory::Item.retrieve("item_id")
+rescue ZohoError => e
+  # Exception thrown
+  puts e.message
+end
+```
 
 ### CRUD Operaions
 
@@ -55,7 +68,7 @@ ZohoInventory.update(item_id, { name: "X-Wing", ... })
 ZohoInventory.delete(item_id)
 ```
 
-The Zoho models avaiable in the gem are: `organizations`, `items` and `contacts`.
+The Zoho models avaiable in the gem are: `organizations`, `items`, `users` and `contacts`.
 
 Special model-specific actions such as `mark_as_active` will be added once all model CRUD actions are implemented. It will be documented below
 ## Development
@@ -75,3 +88,8 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the ZohoInventory project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/zoho_inventory/blob/master/CODE_OF_CONDUCT.md).
+
+
+## Contact
+
+Ping me on [Twitter](https://twitter.com/V_Rolea) for any question!
