@@ -12,12 +12,13 @@ require "zoho_inventory/request"
 # API resources
 require "zoho_inventory/zoho_object"
 require "zoho_inventory/item"
+require "zoho_inventory/contact"
 
 # Support
 require 'zoho_inventory/util'
 
 module ZohoInventory
-  @api_base = "https://inventory.zoho.com/api/v1/"
+  @api_base = "https://inventory.zoho.com/api"
 
   class << self
     attr_accessor :organization_id, :auth_token, :api_base

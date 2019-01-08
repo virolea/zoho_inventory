@@ -4,7 +4,8 @@ require 'webmock/rspec'
 
 PROJECT_ROOT = ::File.expand_path("../", __FILE__)
 
-Dir["#{PROJECT_ROOT}/support/**/*.rb"].each { |f| require f }
+require "#{PROJECT_ROOT}/support/apis/contacts_api.rb"
+require "#{PROJECT_ROOT}/support/apis/items_api.rb"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
