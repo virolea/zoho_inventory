@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Virolea/zoho_inventory.svg?branch=master)](https://travis-ci.org/Virolea/zoho_inventory)
+
 ⚠️ This is a work in progress, only CRUD operations are available for Zoho models for now, and models will be added gradually.
 
 # ZohoInventory
