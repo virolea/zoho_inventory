@@ -4,7 +4,6 @@ module ZohoInventory
     # It implements methods common to all resources available from Zoho
 
     extend Request
-    attr_reader :values
 
     @list = false
     @create = false

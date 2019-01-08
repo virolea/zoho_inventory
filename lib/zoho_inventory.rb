@@ -15,10 +15,10 @@ require "zoho_inventory/zoho_object"
 
 # Models
 require "zoho_inventory/contact"
+require "zoho_inventory/invoice"
 require "zoho_inventory/item"
 require "zoho_inventory/organization"
 require "zoho_inventory/user"
-
 
 ## Support
 require 'zoho_inventory/util'

@@ -5,7 +5,8 @@ module ZohoInventory
         Item::OBJECT_NAME => Item,
         Contact::OBJECT_NAME => Contact,
         Organization::OBJECT_NAME => Organization,
-        User::OBJECT_NAME => User
+        User::OBJECT_NAME => User,
+        Invoice::OBJECT_NAME => Invoice
       }
     end
 
@@ -14,7 +15,8 @@ module ZohoInventory
         Item::OBJECT_NAME => 'item',
         Contact::OBJECT_NAME => 'contact',
         Organization::OBJECT_NAME => 'organization',
-        User::OBJECT_NAME => 'user'
+        User::OBJECT_NAME => 'user',
+        Invoice::OBJECT_NAME => 'invoice'
       }
     end
   end

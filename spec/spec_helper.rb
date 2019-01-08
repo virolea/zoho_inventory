@@ -4,10 +4,12 @@ require 'webmock/rspec'
 
 PROJECT_ROOT = ::File.expand_path("../", __FILE__)
 
+# Stubbed APIs
 require "#{PROJECT_ROOT}/support/apis/contacts_api.rb"
 require "#{PROJECT_ROOT}/support/apis/items_api.rb"
 require "#{PROJECT_ROOT}/support/apis/organizations_api.rb"
 require "#{PROJECT_ROOT}/support/apis/users_api.rb"
+require "#{PROJECT_ROOT}/support/apis/invoices_api.rb"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
