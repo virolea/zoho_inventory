@@ -13,6 +13,7 @@ require "zoho_inventory/request"
 require "zoho_inventory/zoho_object"
 require "zoho_inventory/item"
 require "zoho_inventory/contact"
+require "zoho_inventory/organization"
 
 # Support
 require 'zoho_inventory/util'
