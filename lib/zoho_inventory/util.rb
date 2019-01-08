@@ -4,7 +4,8 @@ module ZohoInventory
       @object_classes ||= {
         Item::OBJECT_NAME => Item,
         Contact::OBJECT_NAME => Contact,
-        Organization::OBJECT_NAME => Organization
+        Organization::OBJECT_NAME => Organization,
+        User::OBJECT_NAME => User
       }
     end
 
@@ -12,7 +13,8 @@ module ZohoInventory
       @remote_object_keys ||= {
         Item::OBJECT_NAME => 'item',
         Contact::OBJECT_NAME => 'contact',
-        Organization::OBJECT_NAME => 'organization'
+        Organization::OBJECT_NAME => 'organization',
+        User::OBJECT_NAME => 'user'
       }
     end
   end
