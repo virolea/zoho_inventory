@@ -1,3 +1,5 @@
+require_relative "api"
+
 module ItemsAPI
   include Api
 

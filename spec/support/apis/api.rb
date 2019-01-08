@@ -1,3 +1,5 @@
+require_relative "fixtures"
+
 module Api
   include Fixtures
 
@@ -49,23 +51,23 @@ module Api
     item = object_class.retrieve('item_id')
     assert_requested :get, resource_url('/item_id')
     expect(item).to be_a(Hash)
-    expect(item['name']).to eq(value)
+    expect(item[key]).to eq(value)
   end
 
   def test_creatable(key, value)
     stub_post_resource
-    item = object_class.create({ name: 'Sprite' })
+    item = object_class.create({ name: 'Name' })
     assert_requested :post, resource_url
     expect(item).to be_a(Hash)
-    expect(item['name']).to eq(value)
+    expect(item[key]).to eq(value)
   end
 
   def test_updatable(key, value)
     stub_put_resource('/item_id')
-    item = object_class.update('item_id', { name: 'Suitcase' })
+    item = object_class.update('item_id', { name: 'Name' })
     assert_requested :put, resource_url('/item_id')
     expect(item).to be_a(Hash)
-    expect(item['name']).to eq(value)
+    expect(item[key]).to eq(value)
   end
 
   def test_deletable(value)
