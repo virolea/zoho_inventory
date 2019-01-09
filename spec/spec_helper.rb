@@ -1,3 +1,7 @@
+# Test Coverage
+require 'simplecov'
+SimpleCov.start
+
 require "bundler/setup"
 require "zoho_inventory"
 require 'webmock/rspec'
