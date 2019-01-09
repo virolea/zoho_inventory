@@ -64,13 +64,13 @@ ZohoInventory::Item.list
 ZohoInventory::Item.retrieve(item_id)
 
 # Update an item
-ZohoInventory.update(item_id, { name: "X-Wing", ... })
+ZohoInventory::Item.update(item_id, { name: "X-Wing", ... })
 
 # Delete an item
-ZohoInventory.delete(item_id)
+ZohoInventory::Item.delete(item_id)
 ```
 
-The Zoho models avaiable in the gem are: `organizations`, `items`, `users` and `contacts`.
+The Zoho models avaiable in the gem are: `organizations`, `items`, `users`, `invoices`cd  and `contacts`.
 
 Special model-specific actions such as `mark_as_active` will be added once all model CRUD actions are implemented. It will be documented below
 ## Development
