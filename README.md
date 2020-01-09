@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Virolea/zoho_inventory.svg?branch=master)](https://travis-ci.org/Virolea/zoho_inventory) [![Test Coverage](https://api.codeclimate.com/v1/badges/47c8158aec1128ce892d/test_coverage)](https://codeclimate.com/github/Virolea/zoho_inventory/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/47c8158aec1128ce892d/maintainability)](https://codeclimate.com/github/Virolea/zoho_inventory/maintainability)
 
-⚠️ This is a work in progress, only CRUD operations are available for Zoho models for now, and models will be added gradually.
+⚠️  This is a work in progress, only CRUD operations are available for Zoho models for now, and models will be added gradually.
 
 # ZohoInventory
 
